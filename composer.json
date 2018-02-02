@@ -46,7 +46,8 @@
         "drupal/console": "~1.0",
         "mnsami/composer-custom-directory-installer": "^1.0",
         "ubc-web-services/ubc_d8_config_modules": "dev-master",
-        "ubc-web-services/galactus": "master"      
+        "ubc-web-services/galactus": "master",
+        "drupal/devel": "^1.2"      
     },
     "require-dev": {
         "behat/mink": "~1.7",
