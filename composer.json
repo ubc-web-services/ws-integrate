@@ -13,6 +13,28 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ubc-web-services/galactus",
+                "version": "master",
+                "dist": {
+                    "url": "https://github.com/ubc-web-services/galactus/archive/master.zip",
+                    "type": "zip"
+                }
+            }
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "ubc-web-services/ubc_d8_config_modules",
+                "version": "dev-master",
+                "dist": {
+                    "url": "https://github.com/ubc-web-services/ubc_d8_config_modules/archive/master.zip",
+                    "type": "zip"
+                }
+            }
         }
     ],
     "require": {
@@ -21,7 +43,10 @@
         "cweagans/composer-patches": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~9.0",
-        "drupal/console": "~1.0"
+        "drupal/console": "~1.0",
+        "mnsami/composer-custom-directory-installer": "^1.0",
+        "ubc-web-services/ubc_d8_config_modules": "dev-master",
+        "ubc-web-services/galactus": "master"      
     },
     "require-dev": {
         "behat/mink": "~1.7",
@@ -70,6 +95,18 @@
             ],
             "drush/contrib/{$name}": [
                 "type:drupal-drush"
+            ],
+            "web/themes/custom/": [
+                    "ubc-web-services/galactus"
+            ],
+            "web/themes/custom/{$name}": [
+                    "type:drupal-custom-theme"
+            ],
+            "web/modules/custom/{$name}": [
+                    "type:drupal-custom-module"
+            ],
+            "web/modules/custom/": [
+                    "ubc-web-services/ubc_d8_config_modules"
             ]
         }
     },

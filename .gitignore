@@ -6,6 +6,10 @@ web/modules/contrib
 web/themes/contrib
 web/profiles/contrib
 
+web/modules/custom
+web/themes/custom
+
+
 # Ignore Drupal's file directory
 web/sites/*/files
 
