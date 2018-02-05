@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3738f9929a2873ed8892b6a37deb8f3b",
+    "content-hash": "58d70a88b6447b75644f7679233bfdc9",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2077,6 +2077,62 @@
             "homepage": "https://www.drupal.org/project/features",
             "support": {
                 "source": "http://cgit.drupalcode.org/features"
+            }
+        },
+        {
+            "name": "drupal/honeypot",
+            "version": "1.27.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/honeypot",
+                "reference": "8.x-1.27"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/honeypot-8.x-1.27.zip",
+                "reference": "8.x-1.27",
+                "shasum": "b40f86ef45a7f4325343e8aa455ecbdceab51ffe"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.27",
+                    "datestamp": "1499867343",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Geerling",
+                    "homepage": "https://www.drupal.org/user/389011",
+                    "email": "geerlingguy@mac.com"
+                }
+            ],
+            "description": "Mitigates spam form submissions using the honeypot method.",
+            "homepage": "https://www.drupal.org/project/honeypot",
+            "keywords": [
+                "deterrent",
+                "form",
+                "honeypot",
+                "honeytrap",
+                "php",
+                "spam"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/honeypot"
             }
         },
         {
@@ -5092,12 +5148,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/ubc-web-services/galactus.git",
-                "reference": "69398dc87030d2c8367fb9323525fcd757d297aa"
+                "reference": "9133701a24c04ff301fd3824846e4cc06b5004d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ubc-web-services/galactus/zipball/69398dc87030d2c8367fb9323525fcd757d297aa",
-                "reference": "69398dc87030d2c8367fb9323525fcd757d297aa",
+                "url": "https://api.github.com/repos/ubc-web-services/galactus/zipball/9133701a24c04ff301fd3824846e4cc06b5004d4",
+                "reference": "9133701a24c04ff301fd3824846e4cc06b5004d4",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -5109,7 +5165,7 @@
                 }
             ],
             "description": "A Drupal 8 UBC CLF 7.0.4 theme",
-            "time": "2018-02-05T18:33:56+00:00"
+            "time": "2018-02-05T22:23:37+00:00"
         },
         {
             "name": "ubc-web-services/ubc_d8_config_modules",
