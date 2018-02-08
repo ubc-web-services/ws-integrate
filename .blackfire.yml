@@ -7,7 +7,7 @@ tests:
             - main.memory < 2Mb
             - metrics.drupal8.drush.peak_memory < 2Mb
             - metrics.drupal8.entity_load.content.count < 50
-            - metrics.drupal8.installed.count == 10
+            - metrics.drupal8.installed.count > 0
             - metrics.drupal8.module.loaded.contrib.count < 20
             - metrics.drupal8.php.load.cpu_time < 50ms
             - metrics.sql.queries.count > 0
