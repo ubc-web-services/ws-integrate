@@ -13,4 +13,3 @@ tests:
             - metrics.sql.queries.count > 0
             - metrics.drupal8.preprocess.js.peak_memory < 1mb
             - metrics.drupal8.preprocess.css.peak_memory < 50kb
-            
