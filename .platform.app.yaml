@@ -46,6 +46,8 @@ hooks:
       drush -y updatedb
       drush -y config-import
       drush -y entup
+    post_deploy: |
+      set -e
 
 # The configuration of app when it is exposed to the web.
 web:
