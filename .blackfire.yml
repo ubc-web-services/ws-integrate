@@ -5,11 +5,10 @@ tests:
             - main.wall_time < 50ms
             - main.io < 150ms
             - main.memory < 2Mb
-            - metrics.sql.queries.count == 0
-    All pages use no SQL queries:
+    All pages process at least one SQL queries:
         path: /.*
         assertions:
-            - metrics.sql.queries.count == 0
+            - metrics.sql.queries.count > 0
 
 scenarios:
     Home:
